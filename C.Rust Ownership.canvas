@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"7b69acb1335134ed","type":"text","text":"# HEAP\nThe heap is less organized: when you put data on the heap, you request a certain amount of space. The memory allocator finds an empty spot in the heap that is big enough, marks it as being in use, and returns a pointer.Data with an unknown size at compile time or a size that might change must be stored on the heap instead.","x":0,"y":-340,"width":250,"height":560},
+		{"id":"156e3b93486a037d","type":"text","text":"## Data Moving\n\nThis process is called allocating on the heap","x":0,"y":-580,"width":250,"height":160},
+		{"id":"09715a2501b827db","type":"text","text":"## Data Moving\nAdding data is called pushing onto the stack, and removing data is called popping off the stack.","x":-280,"y":-540,"width":250,"height":240},
+		{"id":"65c7df2b21b33c03","type":"text","text":"#   STACK\nThe stack stores values in the order it gets them and removes the values in the opposite order. This is referred to as _last in, first out_. All data stored on the stack must have a known, fixed size.\n\n\n","x":-280,"y":-220,"width":250,"height":380},
+		{"id":"6ca40d2f9558260a","type":"text","text":"##### NOTE\nSTACK block is much smaller because it's easier to explain thus simpler and faster compared to HEAP block\n","x":-640,"y":-380,"width":250,"height":270},
+		{"id":"350f98d9fa6a2816","type":"text","text":"## COMPARISON\n\nThe stack is much faster because it allocates the values on top while the heap has to find a spot to store the value in.","x":-155,"y":320,"width":295,"height":220},
+		{"id":"074c0833827b036f","type":"text","text":"### COMPARISON\nAccessing data in the heap is slower than accessing data on the stack because you have to follow a pointer to get there.","x":-155,"y":-940,"width":295,"height":260}
+	],
+	"edges":[
+		{"id":"5b8a623a381570e0","fromNode":"65c7df2b21b33c03","fromSide":"bottom","toNode":"350f98d9fa6a2816","toSide":"top"},
+		{"id":"923b4507c528962b","fromNode":"7b69acb1335134ed","fromSide":"bottom","toNode":"350f98d9fa6a2816","toSide":"top"},
+		{"id":"ff320bb75a643703","fromNode":"65c7df2b21b33c03","fromSide":"top","toNode":"09715a2501b827db","toSide":"bottom"},
+		{"id":"b33314eb53a34ce6","fromNode":"7b69acb1335134ed","fromSide":"top","toNode":"156e3b93486a037d","toSide":"bottom"},
+		{"id":"f15fe51f1e9418e1","fromNode":"156e3b93486a037d","fromSide":"top","toNode":"074c0833827b036f","toSide":"bottom"},
+		{"id":"d80668e1215e72e6","fromNode":"09715a2501b827db","fromSide":"top","toNode":"074c0833827b036f","toSide":"bottom"},
+		{"id":"478d4ce05ba29ef3","fromNode":"65c7df2b21b33c03","fromSide":"left","toNode":"6ca40d2f9558260a","toSide":"right"},
+		{"id":"7aaa4313bbfb04f9","fromNode":"09715a2501b827db","fromSide":"left","toNode":"6ca40d2f9558260a","toSide":"right"}
+	]
+}
